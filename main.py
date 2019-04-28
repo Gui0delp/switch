@@ -1,11 +1,16 @@
 """Name of the game: switch
 """
 
-def main():
-    """The function contents the main code of the game
-    """
+#! /usr/bin/env python3
+# coding: utf-8
 
-    print("Main function")
+import pygame
+import modules.level as lvl
+import modules.character as user
+
+def main():
+    """The function contains the main code of the game
+    """
 
 if __name__ == "__main__":
     #Call the main() function of the game
