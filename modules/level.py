@@ -11,7 +11,7 @@ class Level(object):
     def __init__(self):
 
         self.game_level = []
-        self.size_sprite = 32
+        self.size_sprite = 60
 
     def generate_lvl(self):
         """Permit to generate the level with a text file
