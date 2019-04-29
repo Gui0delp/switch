@@ -32,9 +32,6 @@ def main():
                     quit_game = False
                     pygame.quit() # pylint: disable=no-member
 
-
-    input()
-
 if __name__ == "__main__":
     #Call the main() function of the game
     main()
