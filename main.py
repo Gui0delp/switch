@@ -10,8 +10,8 @@ import modules.level as lvl
 def main():
     """The function contains the main code of the game
     """
-    w_sprite = 32
-    l_sprite = 32
+    w_sprite = 60
+    l_sprite = 60
     w_width = 9 * w_sprite
     w_length = 9 * l_sprite
     quit_game = True
