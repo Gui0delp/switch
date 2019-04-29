@@ -38,8 +38,8 @@ class Level(object):
 
         #Save the structure of the grid into the game level
         self.game_level = lvl_structure
-        self.game_level[0][0] = "S"
-        self.game_level[8][8] = "E"
+        self.game_level[0][0] = "E"
+        self.game_level[8][8] = "S"
 
     def refresh_lvl(self, screen):
         """Permit to refresh the level
