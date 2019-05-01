@@ -71,9 +71,10 @@ class Character(object):
         #user win
         if statut == 1:
             win_message = self.calibri_font.render("Great work you win!", True, (255, 255, 255))
-            info_message = self.calibri_font.render("PRESS ESCAPE TO QUIT", True, (255, 255, 255))
+            info_message = self.calibri_font.render("PRESS ESC TO QUIT", True, (255, 255, 255))
             screen.blit(win_message, (320, 505))
-            screen.blit(info_message, (175, 260))
+            screen.blit(info_message, (210, 260))
         #nothing
         else:
-            pass
+            info_message2 = self.calibri_font.render("Press [r] to restart", True, (255, 255, 255))
+            screen.blit(info_message2, (405, 0))
