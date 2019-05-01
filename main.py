@@ -15,7 +15,9 @@ def main():
     l_sprite = 60
     w_width = 9 * w_sprite
     w_length = 9 * l_sprite
+    game = True
     quit_game = True
+    statut = 0
     pygame.init() # pylint: disable=no-member
     pygame.display.set_caption("Switch") # pylint: disable=no-member
     window = pygame.display.set_mode((w_width, w_length)) # pylint: disable=no-member
@@ -23,16 +25,19 @@ def main():
     level.generate_lvl()
     player = user.Character(level.game_level)
 
-    while quit_game:
+    while game:
 
         level.refresh_lvl(window)
         player.move(window, "")
+        #Permit to know if the player win or... not
+        if level.case_1 == 68 and level.game_level[player.y_user][player.x_user] == "E":
+            statut = 1
+            game = False
 
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:    # pylint: disable=no-member
                 if event.key == pygame.K_ESCAPE:    # pylint: disable=no-member
-                    quit_game = False
-                    pygame.quit() # pylint: disable=no-member
+                    game = False
                 elif event.key == pygame.K_LEFT: # pylint: disable=no-member
                     player.move(window, "LEFT")
                     player.switch()
@@ -45,10 +50,17 @@ def main():
                 elif event.key == pygame.K_DOWN: # pylint: disable=no-member
                     player.move(window, "DOWN")
                     player.switch()
-                else:
-                    pass
 
+        player.user_interface(window, statut)
         pygame.display.flip()
+
+    while quit_game:
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:    # pylint: disable=no-member
+                if event.key == pygame.K_ESCAPE:    # pylint: disable=no-member
+                    quit_game = False
+
+    pygame.quit() # pylint: disable=no-member
 
 if __name__ == "__main__":
     #Call the main() function of the game
