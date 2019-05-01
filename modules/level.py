@@ -14,7 +14,7 @@ class Level(object):
         self.size_sprite = 60
 
     def generate_lvl(self):
-        """Permit to generate the level with a text file
+        """Permit to generate the level
         """
 
         lvl_structure = []
