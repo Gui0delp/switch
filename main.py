@@ -21,6 +21,7 @@ def main():
     pygame.init() # pylint: disable=no-member
     pygame.display.set_caption("Switch") # pylint: disable=no-member
     window = pygame.display.set_mode((w_width, w_length)) # pylint: disable=no-member
+
     level = lvl.Level()
     level.generate_lvl()
     player = user.Character(level.game_level)
@@ -38,6 +39,8 @@ def main():
             if event.type == pygame.KEYDOWN:    # pylint: disable=no-member
                 if event.key == pygame.K_ESCAPE:    # pylint: disable=no-member
                     game = False
+                elif event.key == pygame.K_r:    # pylint: disable=no-member
+                    main()
                 elif event.key == pygame.K_LEFT: # pylint: disable=no-member
                     player.move(window, "LEFT")
                     player.switch()
