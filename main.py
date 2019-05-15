@@ -44,13 +44,13 @@ def main():
                 elif event.key == pygame.K_LEFT: # pylint: disable=no-member
                     player.move(window, "LEFT")
                     player.switch()
-                elif event.key == pygame.K_RIGHT: # pylint: disable=no-member
+                elif event.key == pygame.K_RIGHT:  # pylint: disable=no-member
                     player.move(window, "RIGHT")
                     player.switch()
-                elif event.key == pygame.K_UP: # pylint: disable=no-member
+                elif event.key == pygame.K_UP:  # pylint: disable=no-member
                     player.move(window, "UP")
                     player.switch()
-                elif event.key == pygame.K_DOWN: # pylint: disable=no-member
+                elif event.key == pygame.K_DOWN:  # pylint: disable=no-member
                     player.move(window, "DOWN")
                     player.switch()
 
