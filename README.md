@@ -42,4 +42,4 @@ Use the "R" key for restart the game at any time.
 
 You can leave the game at any time by pressing the "ESC" key.
 
-HAVE FUN :)
+HAVE FUN :) 
