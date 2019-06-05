@@ -1,8 +1,9 @@
-#Switch
+Switch
+======
 
-#For install the game
+**For install the game**
 
-**Installation for Windows:**
+*Installation for Windows:*
 
 1 - Download the get-pip.py (link below) installer script. Save As and save it on your computer, such as your Downloads folder.
 
@@ -20,7 +21,7 @@ Well done, you have install pip, let's go for the next step.
 
 6 - Now you can play !
 
-**Installation for Mac:**
+*Installation for Mac:*
 
 1 - Open a Command and run the following command: sudo easy_install pip.
 
@@ -32,7 +33,7 @@ Well done, you have install pip, let's go for the next step.
 
 4 - Now you can play !
 
-#How to play#
+**How to play**
 
 To move use the directional keys.
 
