@@ -34,6 +34,7 @@ def main():
         if level.case_1 == 68 and level.game_level[player.y_user][player.x_user] == "E":
             statut = 1
             game = False
+            main()
 
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:    # pylint: disable=no-member
