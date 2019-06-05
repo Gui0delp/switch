@@ -1,8 +1,8 @@
-# switch
+#Switch
 
-//////For install the game//////
+#For install the game
 
-Installation for Windows:
+**Installation for Windows:**
 
 1 - Download the get-pip.py (link below) installer script. Save As and save it on your computer, such as your Downloads folder.
 
@@ -20,7 +20,7 @@ Well done, you have install pip, let's go for the next step.
 
 6 - Now you can play !
 
-Installation for Mac:
+**Installation for Mac:**
 
 1 - Open a Command and run the following command: sudo easy_install pip.
 
@@ -32,11 +32,12 @@ Well done, you have install pip, let's go for the next step.
 
 4 - Now you can play !
 
-//////How to play//////
+#How to play#
 
-To move macgyver use the directional keys.
+To move use the directional keys.
 
-Goal of the game: bring all the objects to the guardian, to exit the maze. If you don't have all the objects when you come to the guardian, you die.
+Switch all the square in yellow and go the end square (in red). When you arrived the game restart for a new game.
+Use the "R" key for restart the game at any time.
 
 You can leave the game at any time by pressing the "ESC" key.
 
