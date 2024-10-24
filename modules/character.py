@@ -12,7 +12,7 @@ class Character(object):
         self.lvl = lvl
         self.x_case = 0
         self.y_case = 0
-        self.calibri_font = pygame.font.SysFont("Calibri", 22)
+        self.font = pygame.font.SysFont("Arial", 16)
 
     def move(self, screen, direction):
         """This function permit to move the player
@@ -70,11 +70,11 @@ class Character(object):
         """
         #user win
         if statut == 1:
-            win_message = self.calibri_font.render("Great work you win!", True, (255, 255, 255))
-            info_message = self.calibri_font.render("PRESS ESC TO QUIT", True, (255, 255, 255))
+            win_message = self.font.render("Great work you win!", True, (255, 255, 255))
+            info_message = self.font.render("PRESS ESC TO QUIT", True, (255, 255, 255))
             screen.blit(win_message, (320, 505))
             screen.blit(info_message, (210, 260))
         #nothing
         else:
-            info_message2 = self.calibri_font.render("Press [r] to restart", True, (255, 255, 255))
+            info_message2 = self.font.render("Press [r] to restart", True, (255, 255, 255))
             screen.blit(info_message2, (405, 0))
